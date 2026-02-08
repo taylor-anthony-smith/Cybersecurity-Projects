@@ -3,7 +3,7 @@
 
 [Brief Introduction - Remove this afterwards]
 
-I am a recent graduate with a profound interest in technology and a dedication to solving complex problems.
+I am a Cybersecurity professional with over seven years of experience in the industry. I bring a practical, risk-driven approach to identifying risk, strengthening security controls, and supporting organizational resilience against cyber threats.
 
 ## Objective
 [Provide Objective - Remove this afterwards]]
