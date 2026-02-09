@@ -1,11 +1,11 @@
 # Hello, I'm Taylor.
 <a href="https://linkedin.com/in/taylorsmith55347"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
-Brief Introduction
+**Brief Introduction**
 
 I am a Cybersecurity professional with over seven years of experience in the industry. I bring a practical, risk-driven approach to identifying risk, strengthening security controls, and supporting organizational resilience against cyber threats.
 
-Objective
+**Objective**
 
 My journey in the technology space has led me to develop a passion for cybersecurity, with a goal of transitioning into a SOC analyst or GRC Analyst role to support threat detection and compliance while contributing to continuous security improvement.
 
