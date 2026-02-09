@@ -1,15 +1,13 @@
 # Hello, I'm Taylor.
 <a href="https://linkedin.com/in/taylorsmith55347"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="https://github.com/taylor-anthony-smith"><img src="https://img.shields.io/badge/github-repo-blue?logo=github" /></a>
 
-[Brief Introduction - Remove this afterwards]
+Brief Introduction
 
 I am a Cybersecurity professional with over seven years of experience in the industry. I bring a practical, risk-driven approach to identifying risk, strengthening security controls, and supporting organizational resilience against cyber threats.
 
-## Objective
-[Provide Objective - Remove this afterwards]]
+Objective
 
-My journey in computer science has led me to develop a passion for cybersecurity, and I am now eager to transition into this field, specifically aiming to join a Security Operations Center (SOC) as a Tier 1 Analyst.
+My journey in the technology space has led me to develop a passion for cybersecurity, with a goal of transitioning into a SOC analyst or GRC Analyst role to support threat detection and compliance while contributing to continuous security improvement.
 
 ## Skills
 [Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]
