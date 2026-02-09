@@ -1,6 +1,6 @@
 # Hello, I'm Taylor.
 <a href="https://linkedin.com/in/taylorsmith55347"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6768529" style='border:none;'></iframe>
+<a href=iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=6768529" style='border:none;'></iframe>
 
 **Brief Introduction**
 
