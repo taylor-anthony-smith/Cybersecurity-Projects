@@ -34,4 +34,61 @@ Our next step in the process is to set up our Windows 2022 server to run DNS Man
 To assign a static IP, we manually enter our IPv4 information within our Ethernet properties as shown in Figure 2.1. Each machine on our network will need their own IP address and be on the same subnet as our server. We also need to set the default gateway as the IP address of our router. Note: It’s important to set the DNS server address to the same address of our DNS server, allowing it to resolve its own queries locally.
 
 **Figure 2.1: Static IP Assignment**
+
 ![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/3796e6b76186550859fe0ec830b87bb4bbd27062/Images/DNS/Figure%202.1%20-%20Static%20IP%20Assignment.png)
+
+Next, we can proceed with setting up DNS on our server. To do so, we need to navigate to ‘Add Roles and Features’ within Server Manager and select the ‘DNS Server’ role to be added. Below is a breakdown of the selections we need to make as we progress through the installation process (Figure 2.2).
+1. Select role-based or featured based installation on the ‘Installation Type’ page.
+2. Select our Windows 2022 server in the ‘Server Selection’ page.
+3. Under ‘Server Roles’, select ‘DNS Server’ and select ‘Add Features’.
+
+**Figure 2.2: Adding DNS Server Role**
+
+![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/6ede5d24f0b432d13a28d945fe6494aca87179fd/Images/DNS/Figure%202.2%20-%20Adding%20DNS%20Server%20Role.png)
+
+Once the installation is complete, we observe that this process has installed remote installation, role administration, and DNS server tools within our server manager. On the left hand side, we now have DNS installed as an option to configure (Figure 2.3).
+
+**Figure 2.3: Successful Installation**
+
+![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/6ede5d24f0b432d13a28d945fe6494aca87179fd/Images/DNS/Figure%202.3%20-%20Successful%20Installation.png)
+
+# Configuring Endpoints:
+Now that we have installed DNS Manager on our server, we will need to configure our endpoints to point their DNS queries to our Windows server (Figure 3.1). To allow this, we enter our network adapter settings within our Windows 10 endpoint and set the ‘Preferred DNS’ field as the IP address of our Windows server. The same process can be followed for other endpoints within our network, such as our Kali Linux workstation.
+
+**Figure 3.1: Setting Preferred DNS on Endpoint**
+
+![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/6ede5d24f0b432d13a28d945fe6494aca87179fd/Images/DNS/Figure%203.1%20-%20Setting%20Preferred%20DNS%20on%20Endpoint.png)
+
+By setting the preferred DNS on our Windows 10 endpoint, we are now ready to start using our recursive server for DNS queries. To ensure everything is working properly and that our Windows server is being sent the requests, we can utilize a packet tracer such as Wireshark to check our DNS traffic. Within WireShark, we can start a packet capture and then navigate to www.google.com or a different website using our web browser. WireShark will capture all traffic going across our network card. In this example, we can see that our DNS traffic is being sent to our DNS server as expected - with 192.168.0.75 being our source host and 192.168.0.25 as our destination which is the IP address of our DNS server (Figure 3.2).
+
+**Figure 3.2: Using WireShark**
+
+![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/6ede5d24f0b432d13a28d945fe6494aca87179fd/Images/DNS/Figure%203.2%20-%20Using%20Wireshark.png)
+
+Alternatively, we can use a command line tool called nslookup, a network administration tool, to confirm that queries are now being sent to our DNS server (Figure 3.3). This tool can also find IP addresses, associated domain names, and other DNS records for websites.
+
+**Figure 3.3: nslookup**
+
+![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/6ede5d24f0b432d13a28d945fe6494aca87179fd/Images/DNS/Figure%203.3%20-%20nslookup.png)
+
+# DNS Records Explained:
+Our server is authoritative for the DNS names of local resources, but forwards all other queries to other DNS servers such as root nameservers, TLD nameservers, and authoritative nameservers as needed if the domain is not saved within our local cache. Within our DNS Manager, we are now able to create forward lookup zones and reverse lookup zones for our domain (Figure 4.1). Forward DNS lookups translate domain names such as www.amazon.com into IP addresses using ‘A’ and ‘AAAA’ records (whether it’s IPv4 or IPv6), while reverse lookups do the opposite where PTR records map IP addresses back into domain names.
+
+**Figure 4.1: Creating DNS Records**
+
+![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/6ede5d24f0b432d13a28d945fe6494aca87179fd/Images/DNS/Figure%204.1%20-%20Creating%20DNS%20Records.png)
+
+There are many DNS records we need to be aware of including:
+**A:** The record that contains the IPv4 address of a domain.
+**AAAA:** The record that contains the IPv6 address of a domain.
+**CNAME:** Forwards one domain or subdomain to another domain.
+**MX:** Directs mail to an email server.
+**TXT:** Lets an admin store text notes in the records.
+**NS:** Stores the name server server for a DNS entry.
+**SOA:** Stores admin information about a domain.
+**SRV:** Specifies a port for specific services.
+**PTR:** Provides a domain name in reverse lookups.
+
+
+
+
