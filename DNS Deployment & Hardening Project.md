@@ -18,3 +18,5 @@ The objective of this project is to design, configure, and secure a Domain Name 
 # Network Setup & Topology:
 For this lab, we will create a small virtual network within a tool called VirtualBox where we will host our DNS server and user endpoints. After building each machine using their ISO images, we are able to create our network within the ‘Tools’ tab of the application. In our case, we have created a virtual network called ‘Specter Network’ with an assigned IP range of 192.168.0.0/24 (Figure 1.1).
 
+**Figure 1.1: VirtualBox Network Creation**\
+![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/03a72a342966e8675ecb96eacf369ba6d6f66c66/Images/DNS/Figure%201.1%20-%20VirtualBox%20Network%20Creation.png)
