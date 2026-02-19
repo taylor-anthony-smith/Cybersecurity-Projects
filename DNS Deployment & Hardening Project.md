@@ -78,15 +78,15 @@ Our server is authoritative for the DNS names of local resources, but forwards a
 
 ![image alt](https://github.com/taylor-anthony-smith/Cybersecurity-Projects/blob/6ede5d24f0b432d13a28d945fe6494aca87179fd/Images/DNS/Figure%204.1%20-%20Creating%20DNS%20Records.png)
 
-There are many DNS records we need to be aware of including:
-**A:** The record that contains the IPv4 address of a domain.
-**AAAA:** The record that contains the IPv6 address of a domain.
-**CNAME:** Forwards one domain or subdomain to another domain.
-**MX:** Directs mail to an email server.
-**TXT:** Lets an admin store text notes in the records.
-**NS:** Stores the name server server for a DNS entry.
-**SOA:** Stores admin information about a domain.
-**SRV:** Specifies a port for specific services.
+There are many DNS records we need to be aware of including:\
+**A:** The record that contains the IPv4 address of a domain.\
+**AAAA:** The record that contains the IPv6 address of a domain.\
+**CNAME:** Forwards one domain or subdomain to another domain.\
+**MX:** Directs mail to an email server.\
+**TXT:** Lets an admin store text notes in the records.\
+**NS:** Stores the name server server for a DNS entry.\
+**SOA:** Stores admin information about a domain.\
+**SRV:** Specifies a port for specific services.\
 **PTR:** Provides a domain name in reverse lookups.
 
 
