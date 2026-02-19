@@ -1,1 +1,17 @@
+**OBJECTIVE**
+The objective of this project is to design, configure, and secure a Domain Name System (DNS) server within a virtual network environment to provide reliable and secure name resolution services. This hands-on experience was designed to deepen understanding of DNS queries and defensive strategies to secure the requests being made to the server.
+
+SKILLS LEARNED
+-Installing and configuring DNS services in a Windows environment.
+-Creating forward and reverse lookup zones.
+-Managing A, AAAA, CNAME, MX, PTR, and TXT records.
+-Testing DNS lookup using Wireshark and nslookup.
+-Configuring Domain Name System Security Extensions (DNSSEC).
+-Implementing DNS logging and monitoring.
+
+TOOLS USED
+-VirtualBox
+-Windows Server Manager
+-Windows DNS Manager
+-Wireshark
 
